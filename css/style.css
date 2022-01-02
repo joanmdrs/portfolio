@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(65,114,159);
+    background: linear-gradient(90deg, rgba(65,114,159,1) 0%, rgba(88,133,175,1) 37%, rgba(195,224,229,1) 100%);
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    border-bottom: 1px #FFFFFF solid;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#img-header {
+    width: 70px;
+    height: 70px;
+}
+
+#menu{
+    text-align: center;
+    display: flex;
+    gap: 32px;
+}
+
+.item-menu{
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item-menu:hover{
+    color: #000000;
+    transition: 0.5s;
+}
+
+
+#div-login {
+    display: flex;
+    gap: 16px;
+}
+
+#img-login{
+    height: 30px;
+}
+
+.btn-login {
+    background-color: #DF013A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+}
+
+.btn-login:hover {
+    background-color: #2E64FE;
+    transition: 0.5s;
+}
