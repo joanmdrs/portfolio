@@ -13,6 +13,8 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+/* Estilizando o cabeçalho */
+
 header {
     border-bottom: 1px #FFFFFF solid;
     flex-direction: row;
@@ -51,7 +53,7 @@ header {
 }
 
 #img-login{
-    height: 30px;
+    height: 35px;
 }
 
 .btn-login {
@@ -59,9 +61,62 @@ header {
     color: #FFFFFF;
     border: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 .btn-login:hover {
     background-color: #2E64FE;
     transition: 0.5s;
 }
+
+/* Estilizando o #home */
+
+.home {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.home #img-student {
+    margin-top: 40px;
+    height: 300px;
+}
+
+.home div{
+    background-color: #1C1C1C;
+    padding: 2%;
+    box-shadow: 5px 5px 5px #FFFFFF;
+    border-radius: 12px;
+}
+.home div p {
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+    color: #FFFFFF;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+    line-height: 25px;
+
+}
+
+.home div p span{
+    color: rgb(39, 141, 175);
+}
+
+.home #btn-access {
+    background-color: #DF013A;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.home #btn-access:hover{
+    background-color: #0ebb48;
+    transition: 1s;
+}
+
+
