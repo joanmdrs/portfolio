@@ -120,6 +120,7 @@ header {
 
 .home div p span{
     color: rgb(39, 141, 175);
+    cursor: pointer;
 }
 
 .home #btn-access {
