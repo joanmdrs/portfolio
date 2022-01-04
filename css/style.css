@@ -8,9 +8,26 @@
 }
 
 body{
+    font-family: 'Lato', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;    
+}
+  
+body::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #778dca;    
+    border-radius: 20px; 
+    border: 2px solid #FFFFFF;  
+}
+
+header, .home {
     background: rgb(65,114,159);
     background: linear-gradient(90deg, rgba(65,114,159,1) 0%, rgba(88,133,175,1) 37%, rgba(195,224,229,1) 100%);
-    font-family: 'Lato', sans-serif;
 }
 
 /* Estilizando o cabeçalho */
@@ -46,17 +63,16 @@ header {
     transition: 0.5s;
 }
 
-
-#div-login {
+#div-whats {
     display: flex;
     gap: 16px;
 }
 
-#img-login{
+#img-whats{
     height: 35px;
 }
 
-.btn-login {
+.btn-whats {
     background-color: #DF013A;
     color: #FFFFFF;
     border: none;
@@ -64,7 +80,7 @@ header {
     cursor: pointer;
 }
 
-.btn-login:hover {
+.btn-whats:hover {
     background-color: #2E64FE;
     transition: 0.5s;
 }
@@ -76,7 +92,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .home #img-student {
@@ -115,8 +132,132 @@ header {
 }
 
 .home #btn-access:hover{
-    background-color: #0ebb48;
+    background-color: #2E64FE;
     transition: 1s;
 }
+
+.about {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact h1, h3 {
+    margin-bottom: 20px;
+}
+
+.contact #subtitle-contact {
+    padding: 0 30px 20px 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.contact #form-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 16px;
+    position: relative;
+    border: 0.5px solid #1C1C1C;
+    border-radius: 12px;
+}
+
+.contact form input, textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    outline: none;
+    border: 0.5px solid #1C1C1C;
+    border-radius: 5px;
+}
+
+.contact form textarea {
+    padding: 30px;
+    resize: none;
+    overflow: auto;
+}
+
+.contact form button{
+    background-color: #2E64FE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.contact .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid #1C1C1C;
+    padding: 0px 57px 40px 57px;
+    border-radius: 12px;
+}
+
+.contact .redes-sociais div h3{
+    padding-top: 30px;
+}
+
+.contact .links {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact .links a{
+    padding: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact #link-whatsapp {
+    background-color: green;
+}
+
+.contact #link-discord {
+    background-color: #AC58FA;
+}
+
+.contact #link-youtube {
+    background-color: #DF0101;
+}
+
+.contact #link-linkedin {
+    background-color: #0B173B;
+}
+
+.contact #link-github {
+    background-color: #151515;
+}
+
+@media (max-width:500px) {
+    .contact #contact-conteudo {
+        flex-direction: column;
+    }
+    .contact #links-redes-sociais{
+        flex-direction: column;
+    }
+
+}
+    
 
 
