@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Desenvolvendo uma Landing Page</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
         <img id="img-header" src="img/curso-online.png" alt="curso-online">
         <nav id="menu">
             <a class="item-menu" href="#home">Home</a>
-            <a class="item-menu" href="#">YouTube</a>
-            <a class="item-menu" href="#">Sobre</a>
+            <a class="item-menu" href="#youtube">YouTube</a>
+            <a class="item-menu" href="#about">Sobre</a>
             <a class="item-menu" href="#contact">Contato</a>
         </nav>
         <div id="div-whats">
@@ -22,46 +23,49 @@
         </div>
     </header>
 
-    <section id="home" class="home">
-        <img id="img-student" src="img/programador.png" alt="student-watching">
-        <div>
-            <p> Se você é uma programadora ou programador, <br>
-                ou deseja se tornar um, acesse o meu canal <br>
-                no <span>YouTube</span>, lá eu dou várias dicas sobre <br>
-                programação e também outros assuntos. 
-            </p>
-            <button id="btn-access">Acesse aqui</button>
-        </div>
-    </section>
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="home">
+            <img id="img-student" src="img/programador.png" alt="student-watching">
+            <div>
+                <p> Se você é uma programadora ou programador, <br>
+                    ou deseja se tornar um, acesse o meu canal <br>
+                    no <span>YouTube</span>, lá eu dou várias dicas sobre <br>
+                    programação e também outros assuntos. 
+                </p>
+                <button id="btn-access">Acesse aqui</button>
+            </div>
+        </section>
 
+        <!-- Seção Contact -->
+        <section id="contact" class="contact">
 
-
-    <section id="contact" class="contact">
-
-        <h1>Contato</h1>
-        <h3 id="subtitle-contact"> Entre em contato comigo </h3>
-        <div id="form-redes">
-            <form id="send-email">
-                <h3>Me envie um e-mail </h3>
-                <input type="text" placeholder="Seu nome vai aqui">
-                <input type="email" placeholder="Aqui tu coloca seu e-mail">
-                <textarea placeholder="E aqui vai sua mensagem"></textarea>
-                <button> Enviar </button>
-            </form>
-            <div class="redes-sociais">  
-                <div>
-                    <h3>Minhas redes sociais</h3>
-                </div>
-                <div class="links">
-                    <a id="link-whatsapp">Whatsapp</a>    
-                    <a id="link-discord">Discord</a>
-                    <a id="link-youtube">YouTube</a>
-                    <a id="link-linkedin">LinkedIn</a>
-                    <a id="link-github">GitHub</a>
+            <h1>Contato</h1>
+            <h3 id="subtitle-contact"> Entre em contato comigo </h3>
+            <div id="form-redes">
+                <form id="send-email">
+                    <h3>Me envie um e-mail </h3>
+                    <input type="text" placeholder="Seu nome vai aqui">
+                    <input type="email" placeholder="Aqui tu coloca seu e-mail">
+                    <textarea placeholder="E aqui vai sua mensagem"></textarea>
+                    <button> Enviar </button>
+                </form>
+                <div class="redes-sociais">  
+                    <div>
+                        <h3>Minhas redes sociais</h3>
+                    </div>
+                    <div class="links">
+                        <a id="link-whatsapp">Whatsapp</a>    
+                        <a id="link-discord">Discord</a>
+                        <a id="link-youtube">YouTube</a>
+                        <a id="link-linkedin">LinkedIn</a>
+                        <a id="link-github">GitHub</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    
     <footer>
 
     </footer>

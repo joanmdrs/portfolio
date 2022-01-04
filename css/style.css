@@ -45,7 +45,7 @@ header {
     width: 70px;
     height: 70px;
 }
-
+    
 #menu{
     text-align: center;
     display: flex;
@@ -190,7 +190,7 @@ header {
 .contact form textarea {
     padding: 30px;
     resize: none;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .contact form button{
