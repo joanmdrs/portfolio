@@ -7,32 +7,40 @@
     text-decoration: none;
 }
 
+/* Definindo a fonte do site */
+
 body{
     font-family: 'Lato', sans-serif;
 }
 
+/* Estilizando o scroll da página */
+
 body::-webkit-scrollbar {
-    width: 10px;    
+    /* Aqui estou definindo a largura do scroll */
+    width: 10px;   
 }
   
 body::-webkit-scrollbar-track {
-    background: #FFFFFF;
+    /* Aqui estou definindo a cor de fundo do scroll */
+    background: #FFFFFF;  
 }
 
 body::-webkit-scrollbar-thumb {
+    /* Aqui estou estilizando a barra de rolagem */
     background-color: #778dca;    
     border-radius: 20px; 
     border: 2px solid #FFFFFF;  
 }
 
-header, .home {
+/* Aqui estou definindo a cor de fundo do header e da seção home */
+.header, 
+.home {
     background: rgb(65,114,159);
     background: linear-gradient(90deg, rgba(65,114,159,1) 0%, rgba(88,133,175,1) 37%, rgba(195,224,229,1) 100%);
 }
 
-/* Estilizando o cabeçalho */
-
-header {
+/* Estilizando o header */
+.header {
     border-bottom: 1px #FFFFFF solid;
     flex-direction: row;
     display: flex;
@@ -41,38 +49,57 @@ header {
     padding: 20px;
 }
 
-#img-header {
+/* Formatando o tamanho da imagem presente no header */
+.img-header {
     width: 70px;
     height: 70px;
 }
-    
-#menu{
+
+/* Estilizando a tag nav */
+.menu{
     text-align: center;
     display: flex;
     gap: 32px;
 }
 
+/* Estilizando os items do menu */
 .item-menu{
     color: #FFFFFF;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+    transition: all 400ms ease;
 }
 
-.item-menu:hover{
+/* Neste bloco estou criando uma animação */
+.item-menu::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 30px;
+    border-bottom: 2px solid #DF013A;
     color: #000000;
-    transition: 0.5s;
+    transition: all 1s ease;
+
 }
 
-#div-whats {
+.item-menu:hover::before{
+    width: 100%;
+    
+}
+
+/* Estilizando a div do botão fale comigo */
+.link-my-zap{
     display: flex;
     gap: 16px;
 }
-
-#img-whats{
+/* Formatando o tamanho do icone do whatsapp */
+#icon-whatsapp{
     height: 35px;
 }
 
-.btn-whats {
+/* Estilizando o botão fale comigo */
+#button-tell-me {
     background-color: #DF013A;
     color: #FFFFFF;
     border: none;
@@ -80,13 +107,12 @@ header {
     cursor: pointer;
 }
 
-.btn-whats:hover {
+#button-tell-me:hover {
     background-color: #2E64FE;
     transition: 0.5s;
 }
 
-/* Estilizando o #home */
-
+/* Estilizando a seção #home */
 .home {
     flex-direction: row;
     display: flex;
@@ -96,7 +122,7 @@ header {
     padding-bottom: 100px;
 }
 
-.home #img-student {
+#img-student {
     margin-top: 40px;
     height: 300px;
 }
@@ -107,6 +133,7 @@ header {
     box-shadow: 5px 5px 5px #FFFFFF;
     border-radius: 12px;
 }
+
 .home div p {
     font-weight: lighter;
     font-size: 18px;
@@ -115,7 +142,6 @@ header {
     word-spacing: 2px;
     margin-bottom: 15px;
     line-height: 25px;
-
 }
 
 .home div p span{
@@ -123,7 +149,7 @@ header {
     cursor: pointer;
 }
 
-.home #btn-access {
+#button-access-youtube {
     background-color: #DF013A;
     color: #FFFFFF;
     border: none;
@@ -132,16 +158,12 @@ header {
     border-radius: 20px;
 }
 
-.home #btn-access:hover{
+#button-access-youtube:hover{
     background-color: #2E64FE;
     transition: 1s;
 }
 
-.about {
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-}
-
+/* Estilizando a seção #contact */
 .contact{
     display: flex;
     flex-direction: column;
@@ -154,12 +176,12 @@ header {
     margin-bottom: 20px;
 }
 
-.contact #subtitle-contact {
+#subtitle-contact {
     padding: 0 30px 20px 30px;
     border-bottom: 1px solid #000000;
 }
 
-.contact #form-redes {
+#form-redes {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -203,7 +225,7 @@ header {
     cursor: pointer;
 }
 
-.contact .redes-sociais{
+.redes-sociais{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,17 +234,17 @@ header {
     border-radius: 12px;
 }
 
-.contact .redes-sociais div h3{
+.redes-sociais div h3{
     padding-top: 30px;
 }
 
-.contact .links {
+.links {
     display: flex; 
     flex-direction: column;
     gap: 10px;
 }
 
-.contact .links a{
+.links a{
     padding: 15px;
     color: #FFFFFF;
     text-align: center;
