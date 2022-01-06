@@ -27,7 +27,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     /* Aqui estou estilizando a barra de rolagem */
-    background-color: #778dca;    
+    background-color: #1C1C1C;    
     border-radius: 20px; 
     border: 2px solid #FFFFFF;  
 }
@@ -35,8 +35,7 @@ body::-webkit-scrollbar-thumb {
 /* Aqui estou definindo a cor de fundo do header e da seção home */
 .header, 
 .home {
-    background: rgb(65,114,159);
-    background: linear-gradient(90deg, rgba(65,114,159,1) 0%, rgba(88,133,175,1) 37%, rgba(195,224,229,1) 100%);
+    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
 }
 
 /* Estilizando o header */
@@ -77,7 +76,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     width: 0;
     height: 30px;
-    border-bottom: 2px solid #DF013A;
+    border-bottom: 2px solid #1C1C1C;
     color: #000000;
     transition: all 1s ease;
 
@@ -93,22 +92,24 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     gap: 16px;
 }
-/* Formatando o tamanho do icone do whatsapp */
-#icon-whatsapp{
-    height: 35px;
-}
-
 /* Estilizando o botão fale comigo */
 #button-tell-me {
-    background-color: #DF013A;
     color: #FFFFFF;
+    background: none;
     border: none;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 #button-tell-me:hover {
-    background-color: #2E64FE;
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+    border: none;
     transition: 0.5s;
 }
 
@@ -129,19 +130,17 @@ body::-webkit-scrollbar-thumb {
 
 .home div{
     background-color: #1C1C1C;
+    width: 450px;
     padding: 2%;
-    box-shadow: 5px 5px 5px #FFFFFF;
     border-radius: 12px;
 }
 
 .home div p {
     font-weight: lighter;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
     color: #FFFFFF;
-    word-spacing: 2px;
     margin-bottom: 15px;
-    line-height: 25px;
 }
 
 .home div p span{
@@ -150,7 +149,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #button-access-youtube {
-    background-color: #DF013A;
+    background-image: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% );
     color: #FFFFFF;
     border: none;
     padding: 12px;
@@ -159,8 +158,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #button-access-youtube:hover{
-    background-color: #2E64FE;
-    transition: 1s;
+    background: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+    transition: 10s;
 }
 
 /* Estilizando a seção #contact */
@@ -170,6 +169,9 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    background-color: #FFDEE9;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+
 }
 
 .contact h1, h3 {
@@ -208,6 +210,7 @@ body::-webkit-scrollbar-thumb {
     outline: none;
     border: 0.5px solid #1C1C1C;
     border-radius: 5px;
+    background: none;
 }
 
 .contact form textarea {
@@ -217,7 +220,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact form button{
-    background-color: #2E64FE;
+    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
@@ -250,30 +253,66 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.links a img {
+    height: 30px;
+}
+
+.contact #link-instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D)
 }
 
 .contact #link-whatsapp {
-    background-color: green;
-}
-
-.contact #link-discord {
-    background-color: #AC58FA;
+    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
 }
 
 .contact #link-youtube {
-    background-color: #DF0101;
+    background: linear-gradient(120deg, #ff0000, #282828);
 }
 
 .contact #link-linkedin {
-    background-color: #0B173B;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
 }
 
 .contact #link-github {
-    background-color: #151515;
+    background-image: radial-gradient( circle 597px at 93% 9.8%,  rgba(255,61,89,1) 1.7%, rgba(252,251,44,1) 97% );
 }
 
 @media (max-width:500px) {
-    .contact #contact-conteudo {
+
+    .header{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .header nav {
+        flex-direction: column;
+    }
+    .home {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .home div {
+        margin: 20px;
+        width: auto;
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    #button-access-youtube{
+        margin-bottom: 5px;
+    }
+    .contact #form-redes {
         flex-direction: column;
     }
     .contact #links-redes-sociais{
