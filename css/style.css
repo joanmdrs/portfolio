@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --cor-hover: #0080FF;
+    
+}
+
+/* Definindo configurações iniciais */
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +15,11 @@
 }
 
 /* Definindo a fonte do site */
-
 body{
     font-family: 'Lato', sans-serif;
 }
 
 /* Estilizando o scroll da página */
-
 body::-webkit-scrollbar {
     /* Aqui estou definindo a largura do scroll */
     width: 10px;   
@@ -32,26 +37,52 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid #FFFFFF;  
 }
 
-/* Aqui estou definindo a cor de fundo do header e da seção home */
-.header, 
-.home {
-    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+.header-home {
+    background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
 }
 
 /* Estilizando o header */
-.header {
-    border-bottom: 1px #FFFFFF solid;
-    flex-direction: row;
+.header{
+    /* background-color: #1C1C1C; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    padding-top: 40px;
 }
 
-/* Formatando o tamanho da imagem presente no header */
-.img-header {
-    width: 70px;
-    height: 70px;
+.title {
+    display: flex;
+    gap: 22px;
+}
+
+.text-header {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.text-header h3 {
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon-header h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    color: #0B2161;
+    font-family: 'Lato', sans-serif;
+
 }
 
 /* Estilizando a tag nav */
@@ -64,7 +95,6 @@ body::-webkit-scrollbar-thumb {
 /* Estilizando os items do menu */
 .item-menu{
     color: #FFFFFF;
-    font-weight: bold;
     cursor: pointer;
     position: relative;
     transition: all 400ms ease;
@@ -76,7 +106,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     width: 0;
     height: 30px;
-    border-bottom: 2px solid #1C1C1C;
+    border-bottom: 2px solid var(--cor-hover);
     color: #000000;
     transition: all 1s ease;
 
@@ -87,131 +117,155 @@ body::-webkit-scrollbar-thumb {
     
 }
 
-/* Estilizando a div do botão fale comigo */
-.link-my-zap{
-    display: flex;
-    gap: 16px;
-}
-/* Estilizando o botão fale comigo */
-#button-tell-me {
-    color: #FFFFFF;
-    background: none;
-    border: none;
-    padding: 10px 15px 10px 15px;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-#button-tell-me:hover {
-    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
-    border: none;
-    transition: 0.5s;
-}
-
 /* Estilizando a seção #home .................................................................................................................*/
-
 .home {
     flex-direction: row;
-    
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    padding-bottom: 185px;
-    border-bottom: 0.5px solid #ddd3d3;
-
+    justify-content: center;
+    /* background-color: #1C1C1C; */
+    padding: 50px;
+    padding-bottom: 80px;
+    gap: 50px;
 }
 
-#img-student {
-    margin-top: 40px;
-    height: 300px;
+.home div  h1 {
+    font-size: 40px;
+    font-family: "Comfortaa", cursive;
+    text-transform: uppercase;
+    color: #F2F2F2;
 }
 
-.home div{
-    background-color: #1C1C1C;
-    width: 450px;
-    padding: 2%;
-    border-radius: 12px;
-}
-
-.home div p {
+.home div  p {
+    margin-top: 15px;
+    font-size: 20px;
     font-weight: lighter;
-    font-size: 18px;
-    text-align: justify;
-    color: #FFFFFF;
-    margin-bottom: 15px;
+    line-height: 30px;
+    color: #BDBDBD;
+}
+.home .img-me {
+    /* border: 1px solid #fff; */
+    padding: 20px;
 }
 
-.home div p span{
-    color: rgb(39, 141, 175);
-    cursor: pointer;
+.home .img-me img {
+    width: 250px;
+    
 }
 
-#button-access-youtube {
-    background-image: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% );
-    color: #FFFFFF;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-    border-radius: 20px;
+/* Estilizando a seção projects */
+
+.projects {
+    width: 100%;
+    /* height: 1000px; */
+    /* background-image: url("https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain; */
+    background-color: #1C1C1C;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#button-access-youtube:hover{
-    background: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
-    transition: 10s;
+.title-projects {
+    margin-top: 50px;
+    margin-left: 38px;
+    margin-bottom: 20px;
+}
+
+.title-projects h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.list-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.item-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDBDBD;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.item-project:hover {
+    width: 420px;
+    height: 320px;
+    transition-duration: 1s;
+
 }
 
 /* Estilizando a seção #about .................................................................................................................*/
-
 .about {
+    background-color: #0080FF;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 20px;
-    background-image: linear-gradient( 102.1deg,  rgba(96,221,142,1) 8.7%, rgba(24,138,141,1) 88.1% );
+}
+
+.about .title-about {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+}
+.about .content-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
     
 }
 
-.about h1,
-.about h3 {
-    margin-bottom: 20px;
+.about .content-about .video-intro,
+.about .content-about .work-skills div {
+    border-radius: 5px;
 }
 
-.about div{
-    width: 50%;
-    margin-bottom: 20px;
-    padding: 2%;
-    border: 1px solid #282828;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.about .content-about .video-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #833AB4;
+    width: 730px;
+    height: 450px;
 }
 
-.about div .title {
-    text-indent: 0;
-    text-align: left;
-    color: #282828;
-    font-weight: bold;
-
+.about .content-about .work-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.about div p{
-    text-indent: 50px;
-    line-height: 35px;
-    text-align: justify;
-    color: #FFFFFF;
-    padding-bottom: 10px;
+.about .content-about .work-skills div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #833AB4;
+    width: 300px;
+    height: 170px;
 }
 
-.about div p span{
-    color: #282828;
-    font-weight: bold;
+.about .content-about .work-skills .border-effect {
+    background-color: #1C1C1C;
+    width: 220px;
+    height: 10px;
 }
+
+
+
 
 /* Estilizando a seção #contact ...............................................................................................................*/
 .contact{
@@ -224,11 +278,17 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+.contact h1 {
+    margin-top: 50px;
+    font-family: 'Comfortaa', cursive;
+}
+
 .contact h1, h3 {
     margin-bottom: 20px;
 }
 
 #subtitle-contact {
+    font-family: 'Comfortaa', cursive;
     padding: 0 30px 20px 30px;
     border-bottom: 1px solid #000000;
 }
