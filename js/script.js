@@ -44,10 +44,5 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60);
 }
 
-const form = document.querySelector("#send-email")
-
-form.addEventListener('submit', function(event){
-  event.preventDefault();
-})
 
 
