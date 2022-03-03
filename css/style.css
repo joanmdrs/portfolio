@@ -86,7 +86,7 @@ header .menu .contact img {
     transform: rotate(-45deg);
 }
 
-main .home, main .projects {
+main .home, main .projects, main .about {
     margin-left: 215px;
     margin-right: 215px;
 }
@@ -106,7 +106,8 @@ main .home .container-left {
 }
 
 main .home .container-left .title-home, 
-main .projects .title-projects{
+main .projects .title-projects,
+main .about .title-about{
     display: flex;
     justify-content: baseline;
     align-items: baseline;
@@ -114,13 +115,15 @@ main .projects .title-projects{
 }
 
 main .home .container-left .title-home .line,
-main .projects .title-projects .line{
+main .projects .title-projects .line,
+main .about .title-about .line{
     width: 240px;
     border-bottom: 1px solid var(--second-color);
 }
 
 main .home .container-left .title-home .hello-word,
-main .projects .title-projects .projetos{
+main .projects .title-projects .projetos,
+main .about .title-about .sobre{
     color: var(--second-color);
     font-size: 15px;
     font-weight: normal;
@@ -205,7 +208,8 @@ main .home .container-right .img-computer {
 
 /* Projects */
 
-main .projects .header-projects {
+main .projects .header-projects,
+main .about .header-about {
     display: flex;
     justify-content: center;
     gap: 220px;
@@ -214,7 +218,8 @@ main .projects .header-projects {
     margin-bottom: 65px;
 }
 
-main .projects .header-projects .first-text {
+main .projects .header-projects .first-text,
+main .about .header-about .first-text{
     font-size: 24px;
     width: 270px;
 }
@@ -226,7 +231,8 @@ main .projects .header-projects .second-text {
     width: 450px;
 }
 
-main .projects .header-projects div span {
+main .projects .header-projects div span,
+main .about .header-about div span{
     color: var(--second-color);
 }
 
@@ -241,7 +247,7 @@ main .projects .container-projects .project .image-project {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 60px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -276,7 +282,6 @@ main .projects .container-projects .project .image-project .description-project 
     margin-top: 20px;
 }
 
-
 main .projects .container-projects .project .image-project .description-project .tecnologies-links {
     display: flex;
     justify-content: space-between;
@@ -303,7 +308,6 @@ main .projects .container-projects .project .image-project .description-project 
     border-radius: 3px;
 }
 
-
 main .projects .container-projects .project .image-project .description-project .tecnologies-links .links a img {
     width: 25px;
 }
@@ -311,8 +315,139 @@ main .projects .container-projects .project .image-project .description-project 
 
 /* About */
 
+main .about {
+    margin-top: 140px;
+    /* border: 1px solid #FFFFFF; */
+}
 
+main .about .header-about {
+    display: flex;
+    justify-content: flex-start;
+}
 
+main .about .image-about {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--second-color);
+    border-right: 1px solid var(--second-color);
+    border-bottom-right-radius: 5px;
+}
+
+main .about .image-about div p {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: justify;
+    justify-content: center;
+    text-indent: 50px;
+    line-height: 25px;
+}
+main .about .image-about div button {
+    background-color: var(--second-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    width: 150px;
+    height: 50px;
+    margin-top: 32px;
+}
+
+main .about .image-about div button:hover{
+    transform: scale(110%);
+    transition: all 1s;
+
+}
+main .about .image-about img{
+    width: 250px;
+    margin-right: 10px;
+}
+
+main .about .image-about img:hover{
+    transform: scale(120%);
+    transition: all 1s;
+}
+
+main .about .formation-and-skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main .about .formation-and-skills .formation,
+main .about .formation-and-skills .skills {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .about .formation-and-skills .formation:hover,
+main .about .formation-and-skills .skills:hover {
+    transform: scale(110%);
+    transition: all 1s;
+}
+
+main .about .formation-and-skills .formation .title,
+main .about .formation-and-skills .skills .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .about .formation-and-skills .formation .list-formation, 
+main .about .formation-and-skills .skills .list-skills{
+    border-radius: 5px;
+    background-color: var(--third-color);
+    width: 500px;
+    padding: 30px;
+}
+
+main .about .formation-and-skills .formation .list-formation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: justify;
+}
+
+main .about .formation-and-skills .formation .list-formation .item-formation p span{
+    color: var(--second-color);
+}
+
+main .about .formation-and-skills .skills .list-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main .about .formation-and-skills .skills .list-skills div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: thin solid var(--second-color);
+    border-radius: 5px;
+}
+
+main .about .formation-and-skills .skills .list-skills div:hover {
+    background-color: var(--second-color);
+    transition: all 1s;
+}
+
+main .about .formation-and-skills .formation .line,
+main .about .formation-and-skills .skills .line {
+    width: 150px;
+    background-color: var(--second-color);
+    margin-top: 10px;
+    height: 1px;
+}
 /* Footer */
 footer {
     position: relative;
@@ -323,4 +458,8 @@ footer {
     margin-top: 100vh;
     bottom: 40px;
     color: #FFFFFF;
+}
+
+footer a {
+    color: var(--second-color);
 }
