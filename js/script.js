@@ -44,5 +44,33 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60);
 }
 
+const header = document.querySelector("#header");
 
+window.addEventListener('scroll',() => {
+  if(window.scrollY >= 99) {
+    header.classList.add('not-transparent');
+  }else{
+    header.classList.remove('not-transparent');
+  }
+});
 
+const buttonMenu = document.querySelector('#mobile-menu');
+const menu = document.querySelector('.menu');
+const itemsMenu = document.querySelectorAll('.item-menu');
+
+buttonMenu.addEventListener('click', () =>{
+  menu.classList.toggle('menu-active');
+  buttonMenu.classList.toggle('open');
+  
+  itemsMenu.forEach((element, index) => {
+
+    element.classList.toggle('active');
+    element.animate([
+      { transform: 'translateX(100px)' },
+    { transform: 'translateX(0)' }
+    ], 
+    {
+      duration: index == 0 ? 300 : index * 300 + 300
+    });
+  });
+});
