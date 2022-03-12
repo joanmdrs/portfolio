@@ -202,13 +202,10 @@ main .home .container-left .more-learn img {
 }
 
 main .home .container-right {
-    width: 350px;
-    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--third-color);
     border-radius: 5px;
     margin-top: 36px;
 }
@@ -241,13 +238,13 @@ main .about .header-about {
 main .projects .header-projects .first-text,
 main .about .header-about .first-text{
     font-size: 24px;
-    width: 350px;
+    width: auto;
 }
 
 main .projects .header-projects .second-text {
     text-align: left;
     font-size: 18px;
-    width: 450px;
+    width: auto;
 }
 
 main .projects .header-projects div span,
@@ -266,6 +263,7 @@ main .projects .container-projects {
 main .projects .container-projects .project {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all 1s;
+    max-width: 800px;
 }
 
 main .projects .container-projects .project:hover {
@@ -547,6 +545,7 @@ main .credits {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 main .credits .content{
     display: flex;
@@ -585,11 +584,6 @@ footer {
     body{
         overflow-x: hidden;
     }
-
-    main {
-        margin: auto;
-        display: none;
-    }
     
     header {
         display: flex;
@@ -599,6 +593,7 @@ footer {
         align-items:baseline;
         background-color: var(--third-color);
         padding: 10px;
+        padding-bottom: 50px;
         margin: 0;
 
     }
@@ -668,18 +663,62 @@ footer {
         to {
             opacity: 1;
             transform: translateX(0);
-           
-            
         }
     }
 
-    .home {
-        flex-direction: column;
+    main {
+        margin-left: 30px;
+        margin-right: 30px;
+
     }
 
+    main .home {
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 200px;
+    }
 
+    main .home .container-right img{
+        transform: scale(65%);
+    }
 
-    footer {
-        display: none;
+    main .projects .header-projects {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    main .projects .container-projects {
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    main .projects .container-projects .project{
+        transform: scale(50%);
+        margin-top: -100px;
+    }
+
+    main .about .image-about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    main .about .formation-and-skills .formation .list-formation, 
+    main .about .formation-and-skills .skills .list-skills {
+        width: auto;
+    }
+
+    main .credits .content{
+        width: auto;
+    }
+    main .contact .social-media {
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .contact .social-media .item-social-media{
+        width: 100px;
+        height: 100px;
     }
 }
