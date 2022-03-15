@@ -5,8 +5,8 @@
 <div>
   <img align="left" src="./img/me.png" width="200" alt="avatar joan">
   
-  <br>
-  <p align="justify" style="color:blue">
+ 
+  <p align="justify">
     Este repositório contém o código do meu portifólio. Este projeto foi desenvolvido com bastante cuidado e zelo, pois 
     era uma coisa que a bastante tempo eu já havia pensando em fazer e finalmente consegui implementá-la de fato. Nesta aplicação
     pude colocar em prática várias das minhas habilidades de front end, explorando as propriedades do CSS, como: display, position, transform, 
@@ -19,9 +19,8 @@
 <br>
 <div>
   <h3> O resultado está logo abaixo 👇 </h3>
-  em breve ...
 
-  <h3> Tecnologias utilizadas </h3>
+  <h3> Tecnologias utilizadas 📌</h3>
 
   <ul>
     <li> HTML5 </li>  
