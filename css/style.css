@@ -213,7 +213,7 @@ main .home .container-right {
 
 }
 
-main .home .container-right figure img {
+main .home .container-right img {
     width: 400px;
 }
 
@@ -685,7 +685,7 @@ footer {
         margin-bottom: 100px;
     }
 
-    main .home .container-right figure img {
+    main .home .container-right img {
         transform: scale(95%);
     }
 
