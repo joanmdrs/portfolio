@@ -19,6 +19,26 @@
     text-decoration: none;
 }
 
+/* Estilos que se aplicam a diferentes elementos*/
+
+.box-title-section {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 27px;
+}
+
+.line{
+    width: 240px;
+    border-bottom: 1px solid var(--second-color);
+}
+
+.title-section{
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: normal;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
     background-color: var(--primary-color);
@@ -51,7 +71,8 @@ header {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     gap: 300px;
     order: 0;
     z-index: 2;
@@ -110,50 +131,28 @@ main  {
 /* Home */
 
 main .home {
-    margin-top: 180px;
-    margin-bottom: 70px;
+    margin-top: 170px;
+    margin-bottom: 150px;
     display: flex;
-    gap: 170px;
-    height: 65vh;
+    justify-content: space-between;
+    gap: 100px;
+    height: 60vh;
 }
 
 main .home .container-left {
-    height: 300px;
-}
-
-main .home .container-left .title-home, 
-main .projects .title-projects,
-main .about .title-about,
-main .contact .title-contact {
+    height: 350px;
     display: flex;
-    justify-content: baseline;
-    align-items: baseline;
-    gap: 27px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-main .home .container-left .title-home .line,
-main .projects .title-projects .line,
-main .about .title-about .line,
-main .contact .title-contact .line{
-    width: 240px;
-    border-bottom: 1px solid var(--second-color);
-}
-
-main .home .container-left .title-home .hello-word,
-main .projects .title-projects .projetos,
-main .about .title-about .sobre,
-main .contact .title-contact .contato{
-    color: var(--second-color);
-    font-size: 15px;
-    font-weight: normal;
-}
 
 main .home .container-left .text-apresentation {
     display: flex;
     flex-direction: column;
     gap: 2px;
     margin-top: 50px;
-    width: 275px;
+   
     color: var(--sixth-color);
     text-align: left;
 }
@@ -161,6 +160,7 @@ main .home .container-left .text-apresentation {
 main .home .container-left .text-apresentation p{
     font-size: 24px;
     font-weight: 300;
+
 }
 
 main .home .container-left .text-apresentation p span {
@@ -202,27 +202,31 @@ main .home .container-left .more-learn img {
 }
 
 main .home .container-right {
+    background-color: var(--second-color);
+    border-radius: 5px;
+    height: 350px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    margin-top: 36px;
+    animation: float 3s ease-in-out infinite;
+      box-shadow: rgba(20,137,220,0.75) 0px 20px 30px -10px;
+
 }
 
-main .home .container-right img {
-    position:absolute;
+main .home .container-right figure img {
+    width: 400px;
 }
 
-main .home .container-right .img-joan {
-    width: 300px;
-    z-index: 0;
+@keyframes float{
+	0%, 100%{
+
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-20px)
+	}
 }
 
-main .home .container-right .img-computer {
-    width: 500px;
-    z-index: 1;
-}
 
 /* Projects */
 
@@ -238,19 +242,20 @@ main .about .header-about {
 main .projects .header-projects .first-text,
 main .about .header-about .first-text{
     font-size: 24px;
-    width: auto;
+    width: 30vw;
 }
 
 main .projects .header-projects .second-text {
     text-align: left;
     font-size: 18px;
-    width: auto;
+    width: 30vw;
 }
 
 main .projects .header-projects div span,
 main .about .header-about div span{
     color: var(--second-color);
 }
+
 
 main .projects .container-projects {
     display: flex;
@@ -274,25 +279,13 @@ main .projects .container-projects .project .image-project {
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-top: 60px;
-    max-width: 800px;
-    border-radius: 5px;
-}
-
-main .projects .container-projects .project .project-1 {
-    background-image: linear-gradient(90.49deg, #1C448F 0.37%, rgba(20, 137, 220, 0.48) 99.52%);
-}
-
-main .projects .container-projects .project .project-2 {
-    background-image: linear-gradient(90deg, #987EC5 5.1%, #CF88AA 94.39%);
 }
 
 main .projects .container-projects .project .image-project img {
-    max-width: 600px;
-    margin-left: 60px;
-    margin-right: 60px;
+    max-width: 800px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+
 }
 
 main .projects .container-projects .project .image-project .description-project {
@@ -301,8 +294,8 @@ main .projects .container-projects .project .image-project .description-project 
     justify-content: space-between;
     margin: 0;
     max-width: 800px;
-    gap: 30px;
     background-color: var(--third-color);
+    gap: 20px;
     font-size: 15px;
 
 }
@@ -310,11 +303,10 @@ main .projects .container-projects .project .image-project .description-project 
 
 main .projects .container-projects .project .image-project .description-project p {
     color: var(--sixth-color);
-    text-indent: 20px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
-main .projects .container-projects .project .image-project .description-project .tecnologies-links {
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
@@ -322,13 +314,13 @@ main .projects .container-projects .project .image-project .description-project 
     margin-bottom: 20px;
 }
 
-main .projects .container-projects .project .image-project .description-project .tecnologies-links .tecnologies,
-main .projects .container-projects .project .image-project .description-project .tecnologies-links .links {
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies,
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .links {
     display: flex;
     gap: 10px;
 }
 
-main .projects .container-projects .project .image-project .description-project .tecnologies-links .tecnologies div {
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies div {
     padding: 10px;
     height: 30px;
     font-weight: normal;
@@ -339,15 +331,22 @@ main .projects .container-projects .project .image-project .description-project 
     border-radius: 30px;
 }
 
-main .projects .container-projects .project .image-project .description-project .tecnologies-links .tecnologies .html{
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies .html{
     border:thin solid #fc490b;
 }
 
-main .projects .container-projects .project .image-project .description-project .tecnologies-links .tecnologies .css {
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies .css {
     border: thin solid #1489DC;
 }
 
-main .projects .container-projects .project .image-project .description-project .tecnologies-links .links a img {
+
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies .js {
+    border: thin solid #f5dd1b;
+}
+
+
+
+main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .links a img {
     width: 25px;
     margin: 0;
 }
@@ -547,6 +546,15 @@ main .credits {
     align-items: center;
     text-align: center;
 }
+
+main .credits .title {
+    margin-top: 280px;
+}
+
+main .credits .title p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 main .credits .content{
     display: flex;
     flex-direction: column;
@@ -554,13 +562,17 @@ main .credits .content{
     align-items: center;
     bottom: 40px;
     color: var(--sixth-color);
-    margin-top: 280px;
     background-color: var(--third-color);
     width: 500px;
     padding: 40px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+
+main .credits  p {
+    color: #FFFFFF;
+    font-size: 15px;
 }
 
 main .credits .content div a {
@@ -595,7 +607,6 @@ footer {
         padding: 10px;
         padding-bottom: 50px;
         margin: 0;
-
     }
 
     header .title {
@@ -609,7 +620,6 @@ footer {
     header .menu .mobile-menu {
         display: block;
         margin-top: 20px;
-
     }
 
     header .menu .open .line1 {
@@ -643,17 +653,14 @@ footer {
         animation-duration: 1s;
     }
 
-
     header .menu .item-menu {
         display: none;
     }
 
-    header .menu .active {
+    header .menu .item-active {
         display: block;
         padding: 0;
     }
-
-
 
     @keyframes menu-open {
         from {
@@ -674,17 +681,24 @@ footer {
 
     main .home {
         flex-direction: column;
-        gap: 100px;
-        margin-bottom: 200px;
+        height: auto;
+        margin-bottom: 100px;
     }
 
-    main .home .container-right img{
-        transform: scale(65%);
+    main .home .container-right figure img {
+        transform: scale(95%);
     }
+
 
     main .projects .header-projects {
         flex-direction: column;
         gap: 50px;
+    }
+
+    main .projects .header-projects .first-text,
+    main .about .header-about .first-text,
+    main .projects .header-projects .second-text{
+        width: auto;
     }
 
     main .projects .container-projects {
@@ -721,4 +735,11 @@ footer {
         width: 100px;
         height: 100px;
     }
+
+    /* Controlando os hovers */
+    
+    main .projects .container-projects .project:hover {
+        transform: scale(50%);
+    }
 }
+

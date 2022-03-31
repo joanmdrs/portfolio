@@ -64,7 +64,7 @@ buttonMenu.addEventListener('click', () =>{
   
   itemsMenu.forEach((element, index) => {
 
-    element.classList.toggle('active');
+    element.classList.toggle('item-active');
     element.animate([
       { transform: 'translateX(100px)' },
     { transform: 'translateX(0)' }
