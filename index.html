@@ -7,13 +7,16 @@
 
     <!-- Link para o arquivo style.css -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" 
+    crossorigin="anonymous">
     <title>Joan Medeiros - Portfolio</title>
 </head>
 <body>
 
     <header id="header">
-        <div class="title">
+        <div class="logo">
             <p>JM</p>
         </div>
 
@@ -28,39 +31,40 @@
             <a class="item-menu" href="#about">Sobre</a>
             <a class="item-menu" href="#contact">Contato</a>
         </nav>
+
     </header>
 
     <main>
         <section class="home" id="home">
 
-            <div class="container-left">
-
-                <div class="box-title-section">
-                    <div class="line"></div>
-                    <p class="title-section">hello word</p>
-                </div>
-
-                <div class="text-apresentation">
-                    <p>Joan Medeiros</p>
-                    <p><span>Software Enginner | Front End</span></p>
-                    <p class="description-me-home">
-                        Sou um profissional focado no desenvolvimento de 
-                        aplicações web, participando da concepção até a 
-                        entrega do produto, atuando principalmente no Front End,
-                        mas também presente no desenvolvimento do Back-End.
-                    </p>
-                </div>
-
-               <a class="more-learn" href="#about">
-                    Saiba mais
-                    <img src="./img/seta-direita.png" alt="imagem de uma seta">
-                </a> 
+            <div class="box-title-section">
+                <div class="line"></div>
+                <p class="title-section">hello word</p>
             </div>
 
-            <div class="container-right">
-               
-                    <img src="./img/me.png" alt="">
-                
+            <div class="home-content">
+                <div class="left-side">
+
+                    <div class="text-apresentation">
+                        <h4>Joan Medeiros</h4>
+                        <h4><span>Software Enginner | Front End</span></h4>
+                        <p class="description-me-home">
+                            Sou um profissional focado no desenvolvimento de 
+                            aplicações web, participando da concepção até a 
+                            entrega do produto, atuando principalmente no Front End,
+                            mas também presente no desenvolvimento do Back-End.
+                        </p>
+                    </div>
+    
+                    <a class="more-learn" href="#about">
+                        Saiba mais
+                        <img src="./img/seta-direita.png" alt="imagem de uma seta">
+                    </a> 
+                </div>
+    
+                <div class="right-side">
+                    <img src="./img/me.png" alt="avatar de Joan">
+                </div>
             </div>
 
         </section>
@@ -78,114 +82,14 @@
                 </div>
                 <div class="second-text">
                     Cada projeto possui suas <span>particularidades</span>
-                    e carrega consigo <span>conceitos diferentes</span>.
+                    e carrega consigo <span>aprendizados diferentes</span>.
                 </div>
             </div>
             <div class="container-projects">
-                <div class="project">
-                    <div class="image-project project-1">
-                        <img src="./img/project-1.png" alt="Projeto de uma página de login">
-                        <div class="description-project">
-                            <p>Landing Page desenvolvida com HTML e CSS, com o objetivo de explorar 
-                                as propriedades do FlexBox, e tendo como resultado uma página
-                                dedicada à uma agência de turismos fictícia. 
-                            </p>
-                            <div class="tecnologies-and-links">
-                                <div class="tecnologies">
-                                    <div class="html">HTML</div>
-                                    <div class="css">CSS</div>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/joanmdrs/tourism-landing-page" target="_blank">
-                                        <img src="./img/github.png" alt="ícone do github">
-                                    </a>
-                                    <a href="">
-                                        <img src="./img/link.png" alt="ícone de clip">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-project project-2">
-                        <img src="./img/project-2.png" alt="Projeto de uma página de login">
-                        <div class="description-project">
-                            <p>Página de login desenvolvida utilizando HTML, CSS e um pouco de JavaScript. O objetivo
-                                desta aplicação foi entregar um layout elegante e convidativo para o usuário, utilizando 
-                                pouquíssimas linhas de código. 
-                            </p>
-                            <div class="tecnologies-and-links">
-                                <div class="tecnologies">
-                                    <div class="html">HTML</div>
-                                    <div class="css">CSS</div>
-                                    <div class="js">JavaScript</div>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/joanmdrs/login-page" target="_blank">
-                                        <img src="./img/github.png" alt="ícone do github">
-                                    </a>
-                                    <a href="">
-                                        <img src="./img/link.png" alt="ícone de clip">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-project project-3">
-                        <img src="./img/project-3.png" alt="Projeto de contagem regressiva para o ano novo">
-                        <div class="description-project">
-                            <p>Aplicação desenvolvida com JavaScript Puro, onde é exibido
-                                a contagem regressiva para o ano novo, levando em conta o dia 
-                                atual em que o usuário acessa a aplicação.
-                            </p>
-                            <div class="tecnologies-and-links">
-                                <div class="tecnologies">
-                                    <div class="html">HTML</div>
-                                    <div class="css">CSS</div>
-                                    <div class="js">JavaScript</div>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/joanmdrs/countdown" target="_blank">
-                                        <img src="./img/github.png" alt="ícone do github">
-                                    </a>
-                                    <a href="">
-                                        <img src="./img/link.png" alt="ícone de clip">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-project project-4">
-                        <img src="./img/project-4.png" alt="Projeto de controle financeiro">
-                        <div class="description-project">
-                            <p>Aplicação desenvolvida com JavaScript Puro para 
-                                o controle financeiro, onde o usuário pode adicionar 
-                                suas receitas e suas despesas, e os dados ficam armazenados 
-                                no localStorage.
-                            </p>
-                            <div class="tecnologies-and-links">
-                                <div class="tecnologies">
-                                    <div class="html">HTML</div>
-                                    <div class="css">CSS</div>
-                                    <div class="js">JavaScript</div>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/joanmdrs/financial-control">
-                                        <img src="./img/github.png" alt="ícone do github">
-                                    </a>
-                                    <a href="">
-                                        <img src="./img/link.png" alt="ícone de clip">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="./img/project-1.png" alt="">
+                <img src="./img/project-2.png" alt="">
+                <img src="./img/project-3.png" alt="">
+                <img src="./img/project-4.png" alt="">
             </div>
         </section>
 
@@ -278,42 +182,27 @@
 
 
             <div class="social-media">
-                <div class="item-social-media">
+            
                     <a href="mailto:joan.azevedo.medeiros@gmail.com" target="_blank">
-                        <img src="./img/email.png" alt="imagem de uma carta de e-mail" >
+                        <i class="bi bi-envelope-plus"></i>
                     </a>
-                </div>
-                <div class="item-social-media">
+                
                     <a href="https://www.instagram.com/joandeazevedo/" target="blank">
-                        <img src="./img/instagram.png" alt="imagem do logo do instagram" >
+                        <i class="bi bi-instagram"></i>
                     </a>
-                </div>
-                <div class="item-social-media">
+                
+             
                     <a href="https://www.linkedin.com/in/joan-de-azevedo-medeiros-357631212" target="_blank">
-                        <img src="./img/linkedin.png" alt="imagem do logo do linkedin" >
+                        <i class="bi bi-linkedin"></i>
                     </a>
-                </div>
-                <div class="item-social-media">
+         
                     <a href="https://github.com/joanmdrs" target="_blank">
-                        <img src="./img/github.png" alt="imagem do logo do github">
+                        <i class="bi bi-github"></i>
                     </a>
-                </div>
+                
             </div>
         </section>
-        <section class="credits">
-            <div class="title">
-                <p>Créditos</p>
-            </div>
-            <div class="content">
-                <div><a href="https://www.flaticon.com/br/icones-gratis/instagram" title="instagram ícones">Instagram ícones criados por edt.im - Flaticon</a></div>
-                <div><a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a></div>
-                <div><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></div>
-                <div><a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a></div>
-                <div><a href="https://www.flaticon.com/br/icones-gratis/ligacao" title="ligação ícones">Ligação ícones criados por Freepik - Flaticon</a></div>
-                <div><a href="https://www.flaticon.com/br/icones-gratis/proximo" title="próximo ícones">Próximo ícones criados por Roundicons - Flaticon</a></div>
-            </div>
-            <div class="line"></div>
-        </section>
+        
     </main>
 
     <footer>

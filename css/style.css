@@ -85,7 +85,7 @@ header {
 }
 
 
-header .title {
+header .logo {
     font-family: 'Poiret One', cursive;
     color: var(--second-color);
     font-size: 30px;
@@ -126,6 +126,7 @@ main  {
     margin-left: 215px;
     margin-right: 215px;
     margin-bottom: 300px;
+    /* border: thin solid #FFFFFF; */
 }
 
 /* Home */
@@ -134,64 +135,69 @@ main .home {
     margin-top: 170px;
     margin-bottom: 150px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 100px;
     height: 60vh;
 }
 
-main .home .container-left {
+main .home .home-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+main .home .home-content .left-side {
     height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
-main .home .container-left .text-apresentation {
+main .home .home-content .left-side .text-apresentation {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    margin-top: 50px;
-   
-    color: var(--sixth-color);
     text-align: left;
+    justify-content: space-evenly;
 }
 
-main .home .container-left .text-apresentation p{
-    font-size: 24px;
+main .home .home-content .left-side .text-apresentation h4{
     font-weight: 300;
+    font-size: 24px;
+    color: var(--sixth-color);
+
 
 }
 
-main .home .container-left .text-apresentation p span {
+main .home .home-content .left-side .text-apresentation h4 span {
     color: var(--second-color);
 }
 
-main .home .container-left .text-apresentation .description-me-home {
+main .home .home-content .left-side .text-apresentation .description-me-home {
     font-size: 15px;
+    color: var(--sixth-color);
     margin-top: 20px;
+    text-align: justify;
 }
 
-main .home .container-left .more-learn {
+main .home .home-content .left-side .more-learn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 25px;
     background-color: var(--second-color);
     border-radius: 5px;
     width: 170px;
     height: 50px;
     color: var(--sixth-color);
     transition: all 1s;
-    
 }
 
-main .home .container-left .more-learn:hover{
+main .home .home-content .left-side .more-learn:hover{
     transform: scale(110%);
 }
 
-main .home .container-left .more-learn img {
+main .home .home-content .left-side .more-learn img {
     margin-left: 5px;
     width: 20px;
     -webkit-transform: rotate(-45deg);
@@ -201,19 +207,20 @@ main .home .container-left .more-learn img {
     transform: rotate(-45deg);
 }
 
-main .home .container-right {
+  main .home .home-content .right-side {
     background-color: var(--second-color);
     border-radius: 5px;
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     animation: float 3s ease-in-out infinite;
-      box-shadow: rgba(20,137,220,0.75) 0px 20px 30px -10px;
+    box-shadow: rgba(20,137,220,0.75) 0px 20px 30px -10px;
 
 }
 
-main .home .container-right img {
+main .home .home-content .right-side img {
     width: 400px;
 }
 
@@ -260,98 +267,15 @@ main .about .header-about div span{
 main .projects .container-projects {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
 }
 
-main .projects .container-projects .project {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: all 1s;
-    max-width: 800px;
+main .projects .container-projects img {
+    width: 900px;
+    border-radius: 5px;
 }
-
-main .projects .container-projects .project:hover {
-    transform: scale(110%);
-}
-
-main .projects .container-projects .project .image-project {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-
-main .projects .container-projects .project .image-project img {
-    max-width: 800px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
-}
-
-main .projects .container-projects .project .image-project .description-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    max-width: 800px;
-    background-color: var(--third-color);
-    gap: 20px;
-    font-size: 15px;
-
-}
-
-
-main .projects .container-projects .project .image-project .description-project p {
-    color: var(--sixth-color);
-    margin: 20px;
-}
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies,
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .links {
-    display: flex;
-    gap: 10px;
-}
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies div {
-    padding: 10px;
-    height: 30px;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--sixth-color);
-    border-radius: 30px;
-}
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies .html{
-    border:thin solid #fc490b;
-}
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies .css {
-    border: thin solid #1489DC;
-}
-
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .tecnologies .js {
-    border: thin solid #f5dd1b;
-}
-
-
-
-main .projects .container-projects .project .image-project .description-project .tecnologies-and-links .links a img {
-    width: 25px;
-    margin: 0;
-}
-
-
 /* About */
 
 main .about {
@@ -514,10 +438,12 @@ main .contact .header-contact .first-text p span{
 main .contact .social-media {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     margin-top: 60px;
 }
-main .contact .social-media .item-social-media {
+main .contact .social-media a {
     width: 200px;
     height: 200px;
     background-color: var(--third-color);
@@ -529,55 +455,16 @@ main .contact .social-media .item-social-media {
     transition: all 1s;
 }
 
-main .contact .social-media .item-social-media:hover {
+main .contact .social-media a:hover {
     background-color: var(--fourth-color);
 }
 
-main .contact .social-media .item-social-media img {
-    width: 50px;
-}
-
-/* Credits */
-
-main .credits {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-main .credits .title {
-    margin-top: 280px;
-}
-
-main .credits .title p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-main .credits .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 40px;
+main .contact .social-media a i {
+    font-size: 60px;
     color: var(--sixth-color);
-    background-color: var(--third-color);
-    width: 500px;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
-main .credits  p {
-    color: #FFFFFF;
-    font-size: 15px;
-}
-
-main .credits .content div a {
-    color: var(--second-color);
-}
+ 
 
 
 /* Footer */
@@ -680,19 +567,24 @@ footer {
     }
 
     main .home {
-        flex-direction: column;
         height: auto;
+
+    }
+
+    main .home .home-content {
+        flex-direction: column;
         margin-bottom: 100px;
     }
 
-    main .home .container-right img {
+    main .home .home-content .right-side img {
         transform: scale(95%);
     }
 
 
     main .projects .header-projects {
         flex-direction: column;
-        gap: 50px;
+        gap: 20px;
+
     }
 
     main .projects .header-projects .first-text,
@@ -702,13 +594,13 @@ footer {
     }
 
     main .projects .container-projects {
-        gap: 0;
-        justify-content: space-around;
-    }
-
-    main .projects .container-projects .project{
-        transform: scale(50%);
         margin-top: -100px;
+        gap: 0;
+    }
+    main .projects .container-projects img {
+        transform: scale(50%);
+        margin-bottom: -100px;
+
     }
 
     main .about .image-about {
@@ -731,9 +623,9 @@ footer {
         align-items: center;
     }
 
-    main .contact .social-media .item-social-media{
-        width: 100px;
-        height: 100px;
+    main .contact .social-media a{
+        width: 150px;
+        height: 150px;
     }
 
     /* Controlando os hovers */
