@@ -197,14 +197,9 @@ main .home .home-content .left-side .more-learn:hover{
     transform: scale(110%);
 }
 
-main .home .home-content .left-side .more-learn img {
-    margin-left: 5px;
-    width: 20px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+main .home .home-content .left-side .more-learn i {
+    font-weight: bold;
+    margin-left: 10px;
 }
 
   main .home .home-content .right-side {
