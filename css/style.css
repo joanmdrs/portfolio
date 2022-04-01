@@ -244,6 +244,7 @@ main .about .header-about {
     color: var(--sixth-color);
     margin-top: 60px;
     margin-bottom: 65px;
+    text-align: justify;
 }
 
 main .projects .header-projects .first-text,
@@ -253,7 +254,6 @@ main .about .header-about .first-text{
 }
 
 main .projects .header-projects .second-text {
-    text-align: left;
     font-size: 18px;
     width: 30vw;
 }
@@ -273,7 +273,7 @@ main .projects .container-projects {
 }
 
 main .projects .container-projects img {
-    width: 900px;
+    width: 100%;
     border-radius: 5px;
 }
 /* About */
@@ -594,12 +594,11 @@ footer {
     }
 
     main .projects .container-projects {
-        margin-top: -100px;
         gap: 0;
     }
     main .projects .container-projects img {
-        transform: scale(50%);
-        margin-bottom: -100px;
+        width: 100%;
+        margin-bottom: 50px;
 
     }
 
@@ -624,14 +623,13 @@ footer {
     }
 
     main .contact .social-media a{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
-    /* Controlando os hovers */
-    
-    main .projects .container-projects .project:hover {
-        transform: scale(50%);
+    main .contact .social-media a i {
+        font-size: 40px;
     }
+    
 }
 
