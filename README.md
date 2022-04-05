@@ -31,7 +31,7 @@
   <h3> Links </h3>
   <ul>
     <li> <a href="https://www.figma.com/file/PjIslKTPCl1en2d9Tus3nS/portfolio?node-id=0%3A1" >Link do protótipo </a> </li>
-    <li> <a href="#" >Link da hospedagem </a> </li>
+    <li> <a href="https://joan-medeiros.netlify.app" >Link da hospedagem </a> </li>
   </ul>
 </div>
 
